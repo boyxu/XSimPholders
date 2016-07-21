@@ -1,0 +1,24 @@
+{
+  "images" : [
+    {
+      "idiom" : "mac"
+    },
+    {
+      "idiom" : "mac",
+      "filename" : "16.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "mac",
+      "filename" : "32.png",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}
