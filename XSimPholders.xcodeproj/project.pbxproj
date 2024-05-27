@@ -11,10 +11,7 @@
 		2B170E3A2BFF8C38002ECFE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B170E392BFF8C38002ECFE4 /* ContentView.swift */; };
 		2B170E3C2BFF8C39002ECFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B170E3B2BFF8C39002ECFE4 /* Assets.xcassets */; };
 		2B170E3F2BFF8C39002ECFE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B170E3E2BFF8C39002ECFE4 /* Preview Assets.xcassets */; };
-		2B170E4B2BFF99DD002ECFE4 /* SimFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B170E482BFF99DD002ECFE4 /* SimFinder.swift */; };
-		2B170E4C2BFF99DD002ECFE4 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B170E492BFF99DD002ECFE4 /* EventMonitor.swift */; };
 		2BF8A77D2BFFB9C300C617F3 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 2BF8A77C2BFFB9C300C617F3 /* SwiftyJSON */; };
-		2BF8A77F2C021B5B00C617F3 /* DeviceApplications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF8A77E2C021B5B00C617F3 /* DeviceApplications.swift */; };
 		2BF8A7812C03AED400C617F3 /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF8A7802C03AED400C617F3 /* DeviceViewModel.swift */; };
 		2BF8A7832C03B3D800C617F3 /* XSimDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF8A7822C03B3D800C617F3 /* XSimDataService.swift */; };
 		2BF8A7852C03BB7100C617F3 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF8A7842C03BB7100C617F3 /* Device.swift */; };
@@ -30,9 +27,6 @@
 		2B170E3B2BFF8C39002ECFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B170E3E2BFF8C39002ECFE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B170E402BFF8C39002ECFE4 /* XSimPholders.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XSimPholders.entitlements; sourceTree = "<group>"; };
-		2B170E482BFF99DD002ECFE4 /* SimFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimFinder.swift; sourceTree = "<group>"; };
-		2B170E492BFF99DD002ECFE4 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
-		2BF8A77E2C021B5B00C617F3 /* DeviceApplications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceApplications.swift; sourceTree = "<group>"; };
 		2BF8A7802C03AED400C617F3 /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
 		2BF8A7822C03B3D800C617F3 /* XSimDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSimDataService.swift; sourceTree = "<group>"; };
 		2BF8A7842C03BB7100C617F3 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
@@ -79,9 +73,6 @@
 				2BF8A78E2C05181100C617F3 /* Application.swift */,
 				2BF8A7842C03BB7100C617F3 /* Device.swift */,
 				2BF8A7892C04D1C100C617F3 /* SimctlList.sh */,
-				2BF8A77E2C021B5B00C617F3 /* DeviceApplications.swift */,
-				2B170E492BFF99DD002ECFE4 /* EventMonitor.swift */,
-				2B170E482BFF99DD002ECFE4 /* SimFinder.swift */,
 				2B170E3B2BFF8C39002ECFE4 /* Assets.xcassets */,
 				2B170E402BFF8C39002ECFE4 /* XSimPholders.entitlements */,
 				2B170E3D2BFF8C39002ECFE4 /* Preview Content */,
@@ -178,12 +169,9 @@
 			files = (
 				2BF8A78F2C05181100C617F3 /* Application.swift in Sources */,
 				2BF8A7812C03AED400C617F3 /* DeviceViewModel.swift in Sources */,
-				2BF8A77F2C021B5B00C617F3 /* DeviceApplications.swift in Sources */,
 				2B170E3A2BFF8C38002ECFE4 /* ContentView.swift in Sources */,
-				2B170E4B2BFF99DD002ECFE4 /* SimFinder.swift in Sources */,
 				2B170E382BFF8C38002ECFE4 /* XSimPholdersApp.swift in Sources */,
 				2BF8A7832C03B3D800C617F3 /* XSimDataService.swift in Sources */,
-				2B170E4C2BFF99DD002ECFE4 /* EventMonitor.swift in Sources */,
 				2BF8A7852C03BB7100C617F3 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
