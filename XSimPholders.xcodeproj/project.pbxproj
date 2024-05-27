@@ -36,7 +36,6 @@
 		2BF8A7802C03AED400C617F3 /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
 		2BF8A7822C03B3D800C617F3 /* XSimDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSimDataService.swift; sourceTree = "<group>"; };
 		2BF8A7842C03BB7100C617F3 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		2BF8A7882C04D12000C617F3 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2BF8A7892C04D1C100C617F3 /* SimctlList.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = SimctlList.sh; sourceTree = "<group>"; };
 		2BF8A78E2C05181100C617F3 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,7 +56,6 @@
 		2B170E2B2BFF8C38002ECFE4 = {
 			isa = PBXGroup;
 			children = (
-				2BF8A7882C04D12000C617F3 /* MyPlayground.playground */,
 				2B170E362BFF8C38002ECFE4 /* XSimPholders */,
 				2B170E352BFF8C38002ECFE4 /* Products */,
 			);
