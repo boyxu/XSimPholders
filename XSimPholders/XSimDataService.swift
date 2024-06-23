@@ -14,8 +14,8 @@ class XSimDataService {
     
     private static let devicesPath = NSHomeDirectory().appending("/Library/Developer/CoreSimulator/Devices/")
     
-    let deviceListSubject = CurrentValueSubject<[Device], Never>([])
-    var deviceList: [Device] { deviceListSubject.value }
+    let deviceListSubject = CurrentValueSubject<[OSDevices], Never>([])
+    var deviceList: [OSDevices] { deviceListSubject.value }
     
     deinit {
         deviceListSubject.send(completion: .finished)
@@ -53,10 +53,12 @@ class XSimDataService {
     }
     
     private func onReceive(devicesJson: [String: JSON]) {
-        var devices: [Device] = []
+        
+        var allDevices: [OSDevices] = []
         for (key, jsonArray) in devicesJson {
+            let osVersion = key.replacingOccurrences(of: "com.apple.CoreSimulator.SimRuntime.", with: "")
+            var devices: [Device] = []
             for device in jsonArray.arrayValue {
-                let osVersion = key.replacingOccurrences(of: "com.apple.CoreSimulator.SimRuntime.", with: "")
                 let name = device["name"].stringValue
                 let udid = device["udid"].stringValue
                 let state = device["state"].stringValue
@@ -65,8 +67,10 @@ class XSimDataService {
                 let device = Device(osVersion: osVersion, name: name, udid: udid, path: path, state: state, applications: apps)
                 devices.append(device)
             }
+            let osDevices = OSDevices(osVersion: osVersion, devices: devices)
+            allDevices.append(osDevices)
         }
-        deviceListSubject.send(devices)
+        deviceListSubject.send(allDevices)
     }
     
     private func applicationRootPath(for devicePath: String) -> String {

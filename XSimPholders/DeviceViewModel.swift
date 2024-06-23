@@ -11,13 +11,13 @@ import Foundation
 
 class DeviceViewModel: ObservableObject {
     
-    @Published private(set) var devices: [Device]
+    @Published private(set) var osDevices: [OSDevices]
     
     let service: XSimDataService
     private var subscriptions = Set<AnyCancellable>()
     
-    init(devices: [Device] = [], service: XSimDataService = .init()) {
-        self.devices = devices
+    init(osDevices: [OSDevices] = [], service: XSimDataService = .init()) {
+        self.osDevices = osDevices
         self.service = service
     }
     
@@ -33,8 +33,9 @@ class DeviceViewModel: ObservableObject {
     func updateView() {
         print("updateView...")
         let devices = service.deviceList
-        self.devices = devices
+        self.osDevices = devices
     }
+    
 }
 
 

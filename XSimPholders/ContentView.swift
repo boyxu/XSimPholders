@@ -15,19 +15,20 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            ForEach(viewModel.devices) { device in
-                Menu("\(device.osVersion) \(device.name)") {
-                    ForEach(device.applications) { app in
-                        Button {
-                            viewModel.service.openApplicationSandbox(path: app.sandboxPath)
-                        } label: {
-                            Text(app.displayName)
+            ForEach(viewModel.osDevices) { osDevices in
+                ForEach(osDevices.devices) { device in
+                    Menu("\(device.osVersion) \(device.name)") {
+                        ForEach(device.applications) { app in
+                            Button {
+                                viewModel.service.openApplicationSandbox(path: app.sandboxPath)
+                            } label: {
+                                Text(app.displayName)
+                            }
                         }
                     }
                 }
+                Divider()
             }
-            
-            Divider()
             
             HStack {
                 Button("Refresh Devices") {

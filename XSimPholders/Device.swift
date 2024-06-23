@@ -19,3 +19,10 @@ struct Device: Identifiable {
     
     var id: String { udid }
 }
+
+struct OSDevices: Identifiable {
+    let osVersion: String
+    let devices: [Device]
+    
+    var id: String { osVersion }
+}
